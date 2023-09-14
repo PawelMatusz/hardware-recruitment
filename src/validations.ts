@@ -1,6 +1,6 @@
 import { Selectors } from "./selectors";
 
-export function validationForm(event: { preventDefault: () => void }) {
+export function validationForm(event: Event) {
   const form = document.querySelector(Selectors.form) as HTMLFormElement;
   event.preventDefault();
   if (form?.checkValidity()) {
