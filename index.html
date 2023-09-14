@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+
+  </head>
+  <body>
+    <h2 class="heading">Wysyłka elektroniczna</h2>
+    <p class="description">Adresy email na, które ma być zrealizowana wysyłka elektroniczna. Mozesz dodać maksymalnie 5 adresów</p>
+    <form data-form class="form" >
+      <section data-inputs-container class="form__inputs-container">
+
+      <div data-email-container class="form__email-container">
+        <input required data-email-input class="form__email-input" type="email" id="email" placeholder="Email">
+        <label data-email-label class="form__email-label" for="email">E-mail <span class="star">*</span></label>
+      </div>
+
+    </section>
+      <button data-button-add class="button__add">
+        <i class="bi bi-plus-square"></i> Dodaj adres e-mail
+      </button>
+      <button data-button-submit class="button__submit">Zapisz</button>
+
+
+    </form>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
